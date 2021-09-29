@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.main{
+    background: url(./images/bck.png);
+    height: 100vh;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    padding-top: 30px;
+}
+.game-container{
+    background: #f6f6f6;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 500px;
+    border: 2px solid #333;
+    margin-bottom: 40px;
+    overflow: hidden;
+    position: relative;
+}
+.game-container .bird{
+    background: url(./images/flatty-bird.png);
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    height: 70px;
+    width: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.restart-btn{
+    position: fixed;
+    top: -50px;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    background: #b22222;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    transition: all .4s ease;
+}
+.restart-btn.active{
+    top: 0;
+}
+.restart-btn:hover{
+    height: 60px;
+    box-shadow: 0px 12px 14px rgba(54, 15, 15, 0.2);
+}
+.scores{
+    max-width: 200px;
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 40px;
+    color: #333;
+}
+
+/* Poles */
+.poles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;   
+}
+.pole{
+    position: absolute;
+    border: 0;
+    outline: 0;
+    background: #8b0000;
+    width: 60px;
+    height: 160px;
+    right: -60px;
+}
+.pole1{
+    top: 0;
+}
+.pole2{
+    bottom: 0;
+}
